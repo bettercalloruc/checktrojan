@@ -19,8 +19,6 @@ CREATE TABLE IF NOT EXISTS users (
     last_daily INTEGER DEFAULT 0
 )
 """)
-conn.commit()
-coin_game.db.setup()
 
 # /start: İstifadəçini qeydiyyata alır və balansı 100 coin edir
 @bot.message_handler(commands=['start'])
