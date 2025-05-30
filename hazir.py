@@ -29,7 +29,7 @@ def start(message):
     if cursor.fetchone() is None:
         cursor.execute("INSERT INTO users (user_id, balance) VALUES (?, ?)", (user_id, 100))
         conn.commit()
-        bot.send_message(user_id, "Xoş gəldin! Balansın 100 coinlə başladı.")
+        bot.send_message(user_id, "Xoş gəldin! Balansın 100 coinlə başladı./n /spin  Spin edir. /n /shop Magazani acir /n /flip yazi tura edir. /n /balance Balansdaki pul. /n /daily Gunluk gelir./n /leaderbord En yuksek coinli 5 user. ")
     else:
         bot.send_message(user_id, "Sən artıq qeydiyyatdasan.")
 
