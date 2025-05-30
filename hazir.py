@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS users (
 )
 """)
 conn.commit()
+db.setup()
 
 # /start: İstifadəçini qeydiyyata alır və balansı 100 coin edir
 @bot.message_handler(commands=['start'])
