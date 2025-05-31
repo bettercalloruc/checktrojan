@@ -1,6 +1,6 @@
 import psycopg2
 
-DB_URL = "postgresql://postgres:20072009abC£@db.iqkrnjjklahkyoisbgvf.supabase.co:5432/postgres"  # Buraya öz Supabase bağlantını qoy
+DB_URL = "postgresql://postgres:20072009abC$@db.iqkrnjjklahkyoisbgvf.supabase.co:5432/postgres"  # Buraya öz Supabase bağlantını qoy
 
 conn = psycopg2.connect(DB_URL, sslmode='require')
 cur = conn.cursor()
